@@ -16,28 +16,14 @@ function searchAPI() {
       },
     }
   );
-  // <div class="responses">
-  //   <div id="title">Title</div>
-  //   <div id="description">
-  //     Description Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-  //     Tempore
-  //   </div>
-  //   <div id="url">
-  //     <a href="url">URL</a>
-  //   </div>
-  // </div>;
+ 
   search
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      // console.log(data.results[2]);
       let arr = data.results;
-      //  arr.forEach((result) => {
-      //    console.log(result.title + "\n");
-      //    console.log(result.url + "\n");
-      //    console.log(result.description + "\n");
-      //  });
+     
       arr.forEach((result) => {
         responseAll.insertAdjacentHTML(
           "beforeend",
@@ -47,7 +33,7 @@ function searchAPI() {
               ${result.description}
             </div>
             <div id="url">
-              <a href="url">${result.url}</a>
+              <a href="${result.url}">${result.url}</a>
             </div>
           </div>`
         );
