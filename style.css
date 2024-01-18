@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* text-align: center; */
+}
+body,
+html {
+  background-color: #e2e6ff;
+  background: linear-gradient(40deg, #fff, #e2e6ff, #bdb7e1, #bda9d6, #c5a4ee);
+  width: 100vw;
+  color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+}
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 1rem;
+  position: relative;
+  height: 100vh;
+}
+#bgImage {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+#logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  z-index: 1;
+  margin: 1rem auto;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+#searchInput {
+  width: 80%;
+  max-width: 28rem;
+  height: 2.2rem;
+  border-radius: 1.2rem;
+  border: 2px solid black;
+  z-index: 1;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding: 0.1rem 1rem;
+}
+#searchBtn {
+  padding: 0.3rem 1.3rem;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: #a1a6ff;
+  z-index: 1;
+  border-radius: 0.3rem;
+}
+#responseWrapper {
+  width: 95%;
+  background-color: #dcdae8;
+  color: #1c1c1c;
+  padding: 1rem;
+  text-align: center;
+  min-height: 100vh;
+  max-width: 45rem;
+  margin: 1rem auto;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+.responses {
+  margin: 0.5rem auto;
+  text-align: left;
+  border-bottom: 2px solid black;
+  background-color: #dfeafb;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  width: 90%;
+  word-wrap: normal;
+}
+#title {
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  font-size: small;
+  color: #000000;
+}
+#description {
+  line-height: 1.3rem;
+}
+#cancleResponse {
+  font-size: larger;
+  cursor: pointer;
+  color: #1c1c1c;
+  overflow: scroll;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+#asked {
+  margin: 0.4rem auto;
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 45rem;
+}
